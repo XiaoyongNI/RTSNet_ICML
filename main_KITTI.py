@@ -132,7 +132,7 @@ RTSNet_Pipeline = Pipeline(strTime, "RTSNet", "RTSNet")
 RTSNet_Pipeline.setssModel(sys_model)
 RTSNet_Pipeline.setModel(RTSNet_model)
 RTSNet_Pipeline.setTrainingParams(n_Epochs=1, n_Batch=1, learningRate=1E-9, weightDecay=1E-4)
-RTSNet_Pipeline.model = torch.load('RTSNet/best-model.pt',map_location=dev)
+RTSNet_Pipeline.model = torch.load('RTSNet/best-model_City_alt1_r20.pt',map_location=dev)
 # [MSE_cv_linear_epoch, MSE_cv_dB_epoch, MSE_train_linear_epoch, MSE_train_dB_epoch] = RTSNet_Pipeline.NNTrain(sys_model, cv_input, cv_target, train_input, train_target, path_results,kitti=True)
 ## Test Neural Network
 [MSE_test_linear_arr, MSE_test_linear_avg, MSE_test_dB_avg, MSE_test_dB_std, rtsnet_out,RunTime] = RTSNet_Pipeline.NNTest(sys_model, test_input, test_target, path_results,kitti=True)

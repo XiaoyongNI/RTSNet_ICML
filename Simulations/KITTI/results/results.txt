@@ -48,7 +48,7 @@ Optimal 1/q2 [dB]:  tensor(-40.)
 
 
 Observation noise 1/r2 [dB]:  tensor(0.) (fixed)
-Oprimize q to tune RTS
+Optimize q to tune RTS
 Process noise 1/q2 [dB]:  tensor(-20.)
 Evaluate Kalman Filter True
 Kalman Filter - MSE LOSS: tensor(8.0314) [dB]
